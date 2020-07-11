@@ -1,0 +1,64 @@
+! ▒██   ██▒ ██▀███  ▓█████   ██████  ▒█████   █    ██  ██▀███   ▄████▄  ▓█████   ██████ 
+! ▒▒ █ █ ▒░▓██ ▒ ██▒▓█   ▀ ▒██    ▒ ▒██▒  ██▒ ██  ▓██▒▓██ ▒ ██▒▒██▀ ▀█  ▓█   ▀ ▒██    ▒ 
+! ░░  █   ░▓██ ░▄█ ▒▒███   ░ ▓██▄   ▒██░  ██▒▓██  ▒██░▓██ ░▄█ ▒▒▓█    ▄ ▒███   ░ ▓██▄   
+!  ░ █ █ ▒ ▒██▀▀█▄  ▒▓█  ▄   ▒   ██▒▒██   ██░▓▓█  ░██░▒██▀▀█▄  ▒▓▓▄ ▄██▒▒▓█  ▄   ▒   ██▒
+! ▒██▒ ▒██▒░██▓ ▒██▒░▒████▒▒██████▒▒░ ████▓▒░▒▒█████▓ ░██▓ ▒██▒▒ ▓███▀ ░░▒████▒▒██████▒▒
+! ▒▒ ░ ░▓ ░░ ▒▓ ░▒▓░░░ ▒░ ░▒ ▒▓▒ ▒ ░░ ▒░▒░▒░ ░▒▓▒ ▒ ▒ ░ ▒▓ ░▒▓░░ ░▒ ▒  ░░░ ▒░ ░▒ ▒▓▒ ▒ ░
+! ░░   ░▒ ░  ░▒ ░ ▒░ ░ ░  ░░ ░▒  ░ ░  ░ ▒ ▒░ ░░▒░ ░ ░   ░▒ ░ ▒░  ░  ▒    ░ ░  ░░ ░▒  ░ ░
+!  ░    ░    ░░   ░    ░   ░  ░  ░  ░ ░ ░ ▒   ░░░ ░ ░   ░░   ░ ░           ░   ░  ░  ░  
+!  ░    ░     ░        ░  ░      ░      ░ ░     ░        ░     ░ ░         ░  ░      ░  
+!                                                              ░                        
+
+
+!! GENERAL
+urxvt*cursorBlink:      false
+urxvt*scrollBar:        false
+urxvt*depth:            32
+urxvt*internalBorder:   8
+urxvt*dynamicColors:    on
+urxvt*perl-ext-common:  default,matcher,selection-to-clipboard
+URxvt.url-launcher:     /usr/bin/xdg-open
+URxvt.matcher.button:   1
+
+
+!! FONTS
+URxvt.font:             xft:Iosevka SS08:pixelsize=14:style=bold:antialias=true
+URxvt.boldFont:         xft:Iosevka SS08:pixelsize=14:style=bold:antialias=true
+URxvt.italicFont:       xft:Iosevka SS08:pixelsize=14:style=italic:antialias=true
+URxvt.boldItalicFont:   xft:Iosevka SS08:pixelsize=14:style=bold italic:antialias=true
+
+Xft.antialias:          true
+Xft.hinting:            true
+Xft.hintstyle:          hintslight
+Xft.lcdfilter:          lcddefault
+Xft.rgba:               rgb
+
+
+!! COLORS
+*background:            #000000
+*foreground:            #ffffcc
+*.cursorColor:          #ffffcc
+
+*color0:                #282828
+*color8:                #928374
+
+*color1:                #cc241d
+*color9:                #fb4934
+
+*color2:                #98971a
+*color10:               #b8bb26
+
+*color3:                #d79921
+*color11:               #fabd2f
+
+*color4:                #458588
+*color12:               #83a598
+
+*color5:                #b16286
+*color13:               #d3869b
+
+*color6:     	        #689d6a
+*color14:    	        #8ec07c
+
+*color7:      	        #a89984
+*color15:     	        #ebdbb2

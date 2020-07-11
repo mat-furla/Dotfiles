@@ -1,0 +1,23 @@
+{
+	"template": {
+		"prefix": "template",
+		"body": [
+		  "---",
+		  "layout: article",
+		  "title: ${1}",
+		  "tags: ${2}",
+		  "aside:",
+		  "  toc: true",
+		  "article_header:",
+		  "  type: cover",
+		  "  image:",
+		  "    src: ${3}",
+		  "---",
+		  "",
+		  "${0}",
+		  "",
+		  "---"
+		],
+		"description": "template"
+	  }
+}
