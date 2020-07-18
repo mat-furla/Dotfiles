@@ -8,7 +8,7 @@ PACOTES_PARA_REMOVER=()
 # ------------------------------ FUNÇÕES ------------------------------- #
 PrintMsg()
 {
-   echo "########## $MSG ##########"
+   echo "### $MSG"
    MSG=""
 }
 
@@ -16,7 +16,7 @@ InstalarPacote()
 {
    for nome_do_pacote in ${PACOTES_PARA_INSTALAR[@]}; do
       if ! dpkg -l | grep -q $nome_do_pacote; then
-         apt install "$nome_do_pacote" -y
+         sudo apt install "$nome_do_pacote" -y
       else
          MSG="[INSTALADO] - $nome_do_pacote"
          PrintMsg
@@ -29,7 +29,7 @@ RemoverPacote()
 {
    for nome_do_pacote in ${PACOTES_PARA_REMOVER[@]}; do
       if dpkg -l | grep -q $nome_do_pacote; then
-         apt purge "$nome_do_pacote" -y
+         sudo apt purge "$nome_do_pacote" -y
       else
          MSG="[NÃO INSTALADO] - $nome_do_pacote"
          PrintMsg
@@ -44,49 +44,65 @@ RemoverPacote()
 #sudo rm /var/cache/apt/archives/lock
 
 ## Atualizando os repositórios ##
+MSG="Atualizando repositórios"
+PrintMsg
 sudo apt update -y
 
+# Pacotes Gerais
+MSG="Instalando pacotes gerais"
+PrintMsg
 PACOTES_PARA_INSTALAR=(
    firmware-linux-nonfree
    firmware-iwlwifi
    network-manager
+   xstow
    xorg
    bspwm
    sxhkd
-   bash-completion
    rxvt-unicode
+   bash-completion
    rofi
    jq
-   fonts-font-awesome
-   picom
-   pcmanfm
-   zathura
-   sxiv
    geany
+   hsetroot
+   pcmanfm
+   xarchiver
+   rar
+   zip
+   unar
+   plzip
+   ncompress
+   p7zip-rar
+   mpv
    chromium
    chromium-l10n
-   hsetroot
-   mpv
-   alsa-utils
-   xarchiver
-   p7zip-rar
-   zip
-   binutils
-   ncompress
-   plzip
-   rar
-   unar
+   sxiv
+   zathura
+   picom
+   flameshot
    tlp
    light
+   dbus-x11
    dunst
    libglib2.0-bin
-   dbus-x11
-   telegram-desktop
-   flameshot
+   alsa-utils
+   binutils
+   fonts-font-awesome
+   i965-va-driver-shaders
+   intel-media-va-driver-non-free
+)
+InstalarPacote
+
+# Pacotes para Desenvolvimento
+MSG="Instalando pacotes para desenvolvimento"
+PrintMsg
+PACOTES_PARA_INSTALAR=(
+   docker
+   docker-compose
    git
    nodejs
    npm
-   xstow
+   telegram-desktop
 )
 InstalarPacote
 
@@ -94,24 +110,26 @@ InstalarPacote
 #sudo systemctl enable NetworkManager.service
 #sudo systemctl enable tlp.service
 
+# Removendo pacotes
+MSG="Removendo pacotes"
+PrintMsg
 PACOTES_PARA_REMOVER=(
+   lemonbar
+   system-config-printer
+   xserver-xorg-video-all
    xserver-xorg-video-intel
    xserver-xorg-video-nouveau
+   xserver-xorg-video-qxl
    xserver-xorg-video-radeon
    xserver-xorg-video-vesa
    xserver-xorg-video-vmware
-   xserver-xorg-video-all
-   xserver-xorg-video-qxl
-   lemonbar
-   system-config-printer
 )
 RemoverPacote
 
-PACOTES_PARA_INSTALAR=(
-   intel-media-va-driver-non-free
-   i965-va-driver-shaders
-)
-InstalarPacote
+# Criando links dos dotfiles
+MSG="Criando links dos dotfiles"
+PrintMsg
+xstow -t $HOME bash bspwm chromium dunst mpv picom rofi sxhkd xorg
 # ---------------------------------------------------------------------- #
 
 # --------------------------- PÓS-INSTALAÇÃO --------------------------- #
