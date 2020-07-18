@@ -46,9 +46,6 @@ RemoverPacote()
 ## Atualizando os repositórios ##
 sudo apt update -y
 
-## Instalando pacotes .deb baixados na sessão anterior ##
-#sudo dpkg -i $DIRETORIO_DOWNLOADS/*.deb
-
 PACOTES_PARA_INSTALAR=(
    firmware-linux-nonfree
    firmware-iwlwifi
@@ -59,6 +56,7 @@ PACOTES_PARA_INSTALAR=(
    bash-completion
    rxvt-unicode
    rofi
+   fonts-font-awesome
    picom
    pcmanfm
    zathura
@@ -80,6 +78,7 @@ PACOTES_PARA_INSTALAR=(
    tlp
    light
    dunst
+   libglib2.0-bin
    dbus-x11
    telegram-desktop
    flameshot
@@ -91,8 +90,8 @@ PACOTES_PARA_INSTALAR=(
 InstalarPacote
 
 # Habilitar serviços
-sudo systemctl enable NetworkManager.service
-sudo systemctl enable tlp.service
+#sudo systemctl enable NetworkManager.service
+#sudo systemctl enable tlp.service
 
 PACOTES_PARA_REMOVER=(
    xserver-xorg-video-intel
@@ -103,6 +102,7 @@ PACOTES_PARA_REMOVER=(
    xserver-xorg-video-all
    xserver-xorg-video-qxl
    lemonbar
+   system-config-printer
 )
 RemoverPacote
 
@@ -114,14 +114,11 @@ InstalarPacote
 # ---------------------------------------------------------------------- #
 
 # --------------------------- PÓS-INSTALAÇÃO --------------------------- #
-## Finalização, atualização e limpeza##
-sudo apt update -y
+## Finalização e limpeza##
 sudo apt autoclean
 sudo apt autoremove -y
 MSG="Script finalizado"
 PrintMsg
 MSG="Recomenda-se que o computador seja reiniciado"
-PrintMsg
-MSG="Obrigado"
 PrintMsg
 # ---------------------------------------------------------------------- #

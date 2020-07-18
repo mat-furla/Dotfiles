@@ -10,20 +10,25 @@
      ░        ░ ░                   ░      ░  ░   ░  ░      ░  
    ░                                                           
 
-  Distro ..................... Arch Linux
+  Distro ..................... Debian Sid
   Window Manager ............. bspwm
   Terminal ................... urxvt
-  Fonts ...................... Iosevka SS08
+  Fonts ...................... Iosevka
   Browser .................... Chromium
-  File Browser ............... pcmanfm
-  Editor ..................... visual studio code
-  Music Player ............... spotify
+  File Browser ............... PCManFM
+  Editor ..................... Visual Studio Code
+  Music Player ............... Spotify
   Media Player ............... mpv
   Launcher ................... rofi
-  GTK Theme .................. flat remix
-  Icon Theme ................. la capitaine
+  GTK Theme .................. Flat Remix
+  Icon Theme ................. La Capitaine
 
 ```
+ Manage with xstow
+ =============
+
+This repository is meant to be used with stow/xstow. An `install.sh` is included to add all
+the needed packages for my system, modify as wanted.
 
  Improve fonts
  =============

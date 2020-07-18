@@ -115,18 +115,18 @@ super + shift + space
 XF86AudioRaiseVolume
     amixer set Master on ;\
     amixer -q sset Master 5%+ ;\
-    $HOME/.config/dunst/vol
+    not-vol
 
 ## Vol Down
 XF86AudioLowerVolume
     amixer set Master on ;\
     amixer -q sset Master 5%- ;\
-    $HOME/.config/dunst/vol
+    not-vol
 
 ## Vol Mute
 XF86AudioMute
     amixer -q sset Master toggle ;\
-    $HOME/.config/dunst/vol
+    not-vol
 
 ## Spotify Toggle
 super + XF86AudioMute
@@ -146,6 +146,6 @@ Print
 
 # Notification
 super + q
-    $HOME/.config/dunst/work ;\
-    $HOME/.config/dunst/clo ;\
-    $HOME/.config/dunst/bat
+    not-work ;\
+    not-clo ;\
+    not-bat
