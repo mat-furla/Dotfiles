@@ -56,6 +56,7 @@ PACOTES_PARA_INSTALAR=(
    bash-completion
    rxvt-unicode
    rofi
+   jq
    fonts-font-awesome
    picom
    pcmanfm

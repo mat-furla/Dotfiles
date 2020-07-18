@@ -109,7 +109,7 @@ super + space
 
 ## Bookmarks
 super + shift + space
-    searchmenu
+    bookmarksmenu
 
 ## Vol Up
 XF86AudioRaiseVolume
