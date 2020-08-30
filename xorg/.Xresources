@@ -14,7 +14,7 @@
 urxvt*cursorBlink:      false
 urxvt*scrollBar:        false
 urxvt*depth:            32
-urxvt*internalBorder:   8
+urxvt*internalBorder:   25
 urxvt*dynamicColors:    on
 urxvt*perl-ext-common:  default,matcher,selection-to-clipboard
 URxvt.url-launcher:     /usr/bin/xdg-open
@@ -22,10 +22,10 @@ URxvt.matcher.button:   1
 
 
 !! FONTS
-URxvt.font:             xft:Iosevka:pixelsize=14:style=bold:antialias=true
-URxvt.boldFont:         xft:Iosevka:pixelsize=14:style=bold:antialias=true
-URxvt.italicFont:       xft:Iosevka:pixelsize=14:style=italic:antialias=true
-URxvt.boldItalicFont:   xft:Iosevka:pixelsize=14:style=bold italic:antialias=true
+URxvt.font:             xft:UbuntuMono Nerd Font:pixelsize=16:style=bold:antialias=true
+URxvt.boldFont:         xft:UbuntuMono Nerd Font:pixelsize=16:style=bold:antialias=true
+URxvt.italicFont:       xft:UbuntuMono Nerd Font:pixelsize=16:style=italic:antialias=true
+URxvt.boldItalicFont:   xft:UbuntuMono Nerd Font:pixelsize=16:style=bold italic:antialias=true
 
 Xft.antialias:          true
 Xft.hinting:            true
@@ -35,7 +35,7 @@ Xft.rgba:               rgb
 
 
 !! COLORS
-*background:            #000000
+*background:            [90]#000000
 *foreground:            #ffffcc
 *.cursorColor:          #ffffcc
 

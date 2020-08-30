@@ -58,13 +58,3 @@ the needed packages for my system, modify as wanted.
    - `i915.semaphores=1 i915.modeset=1 i915.use_mmio_flip=1 i915.powersave=1 i915.enable_ips=1 i915.disable_power_well=1 i915.enable_hangcheck=1 i915.enable_cmd_parser=1 i915.fastboot=0 i915.enable_ppgtt=1 i915.reset=0 i915.lvds_use_ssc=0 i915.enable_psr=0 vblank_mode=0 i915.i915_enable_rc6=1`
    - In Void Linux `intel_iommu=glfx_off` option is needed.
 
- Screenshots
- ==========
-
- ![Scrot1](1.png)
-
- ![Scrot2](2.png)
-
- ![Scrot3](3.png)
-
-

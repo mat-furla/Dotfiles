@@ -1,0 +1,309 @@
+la
+ls
+lsblk
+ls
+dev
+ls
+cd eslo
+cd backend
+asd
+asd
+ls
+ls -all
+..
+..
+..
+cd /
+ls
+cd home/matheus/.config
+ls
+cd bspwm
+ls -a
+..
+..
+la
+sudo reboot
+la
+lsblk
+sudo asd
+ls
+sudo
+su
+la
+htop
+htop
+OA
+la
+sudo pacman -Syyu
+lsblk
+clear
+la
+lsblk
+ls -a
+ls -al
+ls -al
+q zsh-autosuggestions
+pacman -Ss zsh-autosuggestions
+sudo pacman -S community/zsh-autosuggestions
+la
+ls -al
+uname --kernel-name
+cd .dotfiles
+ls
+ls -al
+..
+cd 
+cd .dotfiles
+ls -al
+hsetroot -cover "/home/matheus/Desktop/big-sur.jpg "
+hsetroot -cover "/home/matheus/Desktop/big-sur.jpg"
+hsetroot -cover "/home/matheus/Desktop/black_city.jpeg"
+la
+startx
+sudo pacman -S pulseaudio
+sudo pacman -S pulseaudio-alsa
+sudo reboot
+la
+la
+la
+sudo modprobe snd-aloop
+yay fuse
+sudo apt install fuse
+sudo pacman -S install fuse
+sudo pacman -S fuse
+sudo modprobe fuse
+sudo groupadd fuse
+user="$(whoami)"\
+
+sudo usermod -a -G fuse $user
+dl
+./micclient-x86_64.AppImage -t Wifi 192.168.0.171
+./micclient-x86_64.AppImage -t Wifi 192.168.0.171
+./micclient-x86_64.AppImage -t Wifi 192.168.0.171
+./micclient-x86_64.AppImage -t Wifi 192.168.0.171
+startx
+sudo reboot
+la
+la
+hsetroot -cover "/home/matheus/Desktop/comet.jpg"
+la
+hsetroot -cover "/home/matheus/Desktop/mountain.png"
+hsetroot -cover "/home/matheus/Desktop/jack.jpg"
+la
+lsblk
+la
+cd .dotfiles
+..
+dl
+ls
+cd rofi
+ls
+./launcher.sh
+nano launcher.sh
+dl
+cd rofi
+ls
+rofi -no-lazy-grab -show drun -theme style_icons_blur.rasi
+rofi -no-lazy-grab -show drun -theme style_icons_full.rasi
+rofi -no-lazy-grab -show drun -theme style_icons_full.rasi
+rofi -no-lazy-grab -show drun -theme style_icons_full.rasi
+hS
+hsetroot -cover "/home/matheus/Desktop/black_city.jpeg"
+la
+lsblk
+sudo pcmanfm
+sudo pacman -S lxappearance
+dl
+ls
+cd rofi
+rofi -no-lazy-grab -show drun -theme style_icons_full.rasi
+rofi -no-lazy-grab -show drun -theme style_normal_grid_full.rasi
+rofi -no-lazy-grab -show drun -theme style_normal_grid_full_round.rasi
+sudo pacman -Rscn transmission-gtk
+sudo pacman -Rscn gnome-screenshot
+dl
+cd rofi
+rofi -no-lazy-grab -show drun -theme style_normal_grid_full_round.rasi
+rofi -no-lazy-grab -show drun -theme style_icons_blur.rasi
+rofi -no-lazy-grab -show drun -theme style_normal_grid_full_round.rasi
+rofi -no-lazy-grab -show drun -theme style_normal_grid_full.rasi
+rofi -no-lazy-grab -show drun -theme style_icons_full.rasi
+la
+la
+la
+la
+la
+lsblk
+la
+ls
+la
+la
+lsblk
+la
+lsblk
+la
+lsblk
+sudo teste
+yay lf
+htop
+startx
+p
+ls
+hsetroot -cover "/home/matheus/Desktop/black_city.jpeg"
+la
+lsblk
+la
+la
+lsblk
+la
+la
+lsblk
+la
+lsblk
+sudo pacman -Sttu
+sudo pacman -Syyu
+la
+lsblk
+la
+lsblk
+dl
+..
+la
+lsblk
+la
+lsblk
+LA
+la
+la
+la
+lsblk
+lsblk
+su
+sudo 
+pacman -Ss texlive
+sudo pacman -S extra/texlive-bibtexextra extra/texlive-bin extra/texlive-core extra/texlive-pictures extra/texlive-pstricks extra/texlive-science extra/t extra/texlive-science
+sudo pacman -S extra/texlive-bibtexextra extra/texlive-bin extra/texlive-core extra/texlive-pictures extra/texlive-pstricks extra/texlive-science extra/texlive-science extra/texlive-publishers
+sudo pacman -S biber
+la
+pacman -Ss livreoffice
+pacman -Ss libreoffice
+ls
+mkdir Documents
+cd Documents
+mkdir teste
+cd teste
+touch main.tex
+code .
+pacman -Ss texlive
+sudo pacman -S texlive
+pacman -Ss texlive
+sudo pacman -S extra/texlive-latexextra
+yay minted
+sudo pacman -S minted
+nano .config/chromium-flags.conf
+sudo nano /usr/share/applications/chromium.desktop
+la
+lsblk
+sudo pacman -Syyu
+la
+lsblk
+startx
+p
+cd Downloads
+ls
+cd rofi
+ls
+./launcher.sh
+nano launcher.sh
+rofi -no-lazy-grab -show drun -theme style_normal_grid_full.rasi
+rofi -no-lazy-grab -show drun -theme style_icons_blur.rasi
+rofi -no-lazy-grab -show drun -theme style_icons_full.rasi
+rofi -no-lazy-grab -show drun -theme style_icons_full.rasi
+la
+nano .config/picom/picom.conf
+cd Downloads
+ls
+cd rofi
+ls
+rofi -no-lazy-grab -show drun -theme style_icons_full.rasi
+rofi -no-lazy-grab -show drun -theme style_icons_full.rasi
+rofi -no-lazy-grab -show drun -theme style_icons_full.rasi
+rofi -no-lazy-grab -show drun -theme style_icons_full.rasi
+nano ./style_icons_full.rasi
+rofi -no-lazy-grab -show drun -theme style_icons_full.rasi
+rofi -no-lazy-grab -show drun -theme style_icons_full.rasi
+nano ./style_icons_full.rasi
+rofi -no-lazy-grab -show drun -theme style_icons_full.rasi
+nano ./style_icons_full.rasi
+rofi -no-lazy-grab -show drun -theme style_icons_full.rasi
+nano ./style_icons_full.rasi
+rofi -no-lazy-grab -show drun -theme style_icons_full.rasi
+nano ./style_icons_full.rasi
+rofi -no-lazy-grab -show drun -theme style_icons_full.rasi
+nano ./style_icons_full.rasi
+rofi -no-lazy-grab -show drun -theme style_icons_full.rasi
+nano ./style_icons_full.rasi
+rofi -no-lazy-grab -show drun -theme style_icons_full.rasi
+nano ./style_icons_full.rasi
+rofi -no-lazy-grab -show drun -theme style_icons_full.rasi
+nano ./style_icons_full.rasi
+rofi -no-lazy-grab -show drun -theme style_icons_full.rasi
+cd .dotfiles
+stow rofi
+appsmenu
+appsmenu
+nano .config/sxhkd/sxhkdrc
+appsmenu
+la
+startx
+yay notion
+p
+la
+htop
+free -m
+la
+sudo pacman -S libreoffice
+la
+lsblk
+sudo pacman -S octave
+S
+sudo pacman -S octave
+pacman -Ss gcc-fortran
+sudo pacman -S gcc-fortran
+la
+l
+la
+la
+lsblk
+sudo octave-cli
+la
+lsblk
+ça
+la
+la
+la
+la
+la
+free -m
+free -m
+htop
+la
+lsblk
+la
+la
+startx
+p
+la
+dev
+ls
+..
+cd .dotfiles
+git commit -m "[ADDED] zsh"
+..
+ls
+ls -all
+git config --global user.email "matfurla79@gmail.com"
+git config --global user.name "mat-furla"
+cd .dotfiles
+git commit -m "[ADDED] zsh"
+code .

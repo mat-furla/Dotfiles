@@ -17,19 +17,22 @@ if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
 fi
 
 ## COLORS
-xrdb -load $HOME/.Xresources
+#xrdb -load $HOME/.Xresources
 
 ## BACKGROUND
-hsetroot -solid "#000000"
+hsetroot -cover "$HOME/Desktop/black_city.jpeg"
 
 ## CURSOR
 xsetroot -cursor_name left_ptr
 
+# NOTIFICATIONS
+dunst &
+
 ## COMPOSITOR
-picom --config $HOME/.config/picom/picom.conf &
+picom --experimental-backends -b --config $HOME/.config/picom/picom.conf &
 
 ## URXVT
-urxvtd -q -f -o
+#urxvtd -q -f -o
 
 ## WM
 sxhkd &
