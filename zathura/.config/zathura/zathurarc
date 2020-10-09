@@ -1,5 +1,5 @@
 set font			"BreezeSans Regular 11"
-set recolor                     true
+set recolor                     false
 set completion-group-bg         "#002b36"
 set completion-group-fg         "#839496"
 set completion-bg               "#073642"
@@ -24,8 +24,6 @@ set highlight-color             "#268bd2"
 set highlight-active-color      "#074D40"
 set default-bg                  "#101a2c"
 set default-fg                  "#101a2c"
-set recolor-lightcolor          "#FFFFFF"
-set recolor-darkcolor           "#000000"
 set statusbar-v-padding  	15
 set statusbar-h-padding  	75
 set pages-per-row 		1

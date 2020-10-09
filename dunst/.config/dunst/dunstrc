@@ -45,7 +45,7 @@
     # Icons
     icon_position = left
     max_icon_size = 150
-    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    # icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
 
 
     # History

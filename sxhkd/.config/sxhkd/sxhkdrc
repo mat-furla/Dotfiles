@@ -142,7 +142,7 @@ XF86MonBrightness{Up,Down}
 
 ## Screenshot
 Print
-    flameshot gui -p $HOME
+    gnome-screenshot -i
 
 # Notification
 super + q
