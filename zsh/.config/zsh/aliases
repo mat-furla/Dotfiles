@@ -1,0 +1,101 @@
+## COLORS
+bold=$(tput bold)
+normal=$(tput sgr0)
+red="\e[1;31m"
+green="\e[1;32m"
+nrm="\e[0m"
+
+## FUNCTIONS
+cd() {
+    builtin cd "$@" && ls --color=auto
+}
+
+mkd() {
+    mkdir -p $1
+    cd $1
+}
+
+whereis() {
+    sudo find / -name $1
+}
+
+function extract {
+ if [ -z "$1" ]; then
+    # display usage if no parameters given
+    echo "Usage: extract <path/file_name>.<zip|rar|bz2|gz|tar|tbz2|tgz|Z|7z|xz|ex|tar.bz2|tar.gz|tar.xz>"
+    echo "       extract <path/file_name_1.ext> [path/file_name_2.ext] [path/file_name_3.ext]"
+    return 1
+ else
+    for n in $@
+    do
+      if [ -f "$n" ] ; then
+          case "${n%,}" in
+            *.tar.bz2|*.tar.gz|*.tar.xz|*.tbz2|*.tgz|*.txz|*.tar) 
+                         tar xvf "$n"       ;;
+            *.lzma)      unlzma ./"$n"      ;;
+            *.bz2)       bunzip2 ./"$n"     ;;
+            *.rar)       unrar x -ad ./"$n" ;;
+            *.gz)        gunzip ./"$n"      ;;
+            *.zip)       unzip ./"$n"       ;;
+            *.z)         uncompress ./"$n"  ;;
+            *.7z|*.arj|*.cab|*.chm|*.deb|*.dmg|*.iso|*.lzh|*.msi|*.rpm|*.udf|*.wim|*.xar)
+                         7z x ./"$n"        ;;
+            *.xz)        unxz ./"$n"        ;;
+            *.exe)       cabextract ./"$n"  ;;
+            *)
+                         echo "extract: '$n' - unknown archive method"
+                         return 1
+                         ;;
+          esac
+      else
+          echo "'$n' - file does not exist"
+          return 1
+      fi
+    done
+fi
+}
+
+# Convert video to gif
+# Usage: video2gif video_file (scale) (fps)
+video2gif() {
+  ffmpeg -y -i "${1}" -vf fps=${3:-10},scale=${2:-1920}:-1:flags=lanczos,palettegen "${1}.png"
+  ffmpeg -i "${1}" -i "${1}.png" -filter_complex "fps=${3:-10},scale=${2:-1920}:-1:flags=lanczos[x];[x][1:v]paletteuse" "${1}".gif
+  rm "${1}.png"
+}
+
+
+## ALIASES
+alias sd='sudo'
+alias ls='ls --color=auto'
+alias la='ls -la --color=auto'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias chx='chmod +x'
+alias rb='sudo shutdown -r now'
+alias p='sudo shutdown -h now'
+
+alias q='xbps-query -Rs'
+alias i='sudo xbps-install -S'
+alias u='sudo xbps-install -Syyu'
+alias r='sudo xbps-remove -Rcn'
+alias c='sudo xbps-remove -o'
+
+alias gs='git status'
+alias ga='git add --all'
+alias gl='git pull'
+alias gc='git commit -m'
+alias gp='git push --set-upstream origin master'
+
+alias code='code-oss'
+alias net='sudo connman-ncurses'
+
+alias dt='cd $HOME/Desktop'
+alias dl='cd $HOME/Downloads'
+alias dev='cd $HOME/Dev'
+
+alias db='docker-compose --build'
+alias du='docker-compose up -d'
+alias dsc='docker stop $(docker ps -a -q)'
+alias dri='docker rmi $(docker images -q)'

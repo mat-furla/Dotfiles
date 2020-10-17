@@ -1,6 +1,4 @@
-#!/bin/sh
- 
-## Exports
+## EXPORTS
 export VISUAL='nano'
 export EDITOR='nano'
 export BROWSER="chromium"
@@ -9,18 +7,19 @@ export TERM="alacritty"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
-
-
-## Configs
-export ZDOTDIR="$HOME/.config/zsh"
-export QT_QPA_PLATFORMTHEME=gtk3
-
-
-## Path
 export PATH="$PATH:$HOME/.local/bin"
 
+export QT_QPA_PLATFORMTHEME=gtk3
 
-## Lf icons
+export LESS_TERMCAP_mb=$'\E[01;32m'
+export LESS_TERMCAP_md=$'\E[01;32m'
+export LESS_TERMCAP_me=$'\E[0m'
+export LESS_TERMCAP_se=$'\E[0m'
+export LESS_TERMCAP_so=$'\E[01;47;34m'
+export LESS_TERMCAP_ue=$'\E[0m'
+export LESS_TERMCAP_us=$'\E[01;36m'
+export LESS=-r
+
 export LF_ICONS="\
 tw=󰪺 :\
 st=󰉋 :\

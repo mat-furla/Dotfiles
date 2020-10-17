@@ -1,8 +1,8 @@
 * {
   /* General */
-  prompt-text-font:                     "UbuntuMono Nerd Font Mono 18";
-  text-font:                            "UbuntuMono Nerd Font 14";
-  text-font-mono:                       "UbuntuMono Nerd Font Mono 14";
+  prompt-text-font:                     "Iosevka 18";
+  text-font:                            "Iosevka 14";
+  text-font-mono:                       "Iosevka 14";
   icon-font:                            "Font Awesome 5 Free 50";
   icon-font-small:                      "Font Awesome 5 Free 24";
   inputbar-margin:                      4px 4px;

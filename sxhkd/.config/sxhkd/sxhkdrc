@@ -128,6 +128,11 @@ XF86AudioMute
     amixer -q sset Master toggle ;\
     not-vol
 
+## Mic
+XF86AudioMicMute
+    amixer set Capture toggle ;\
+    not-mic
+
 ## Spotify Toggle
 super + XF86AudioMute
     dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
@@ -142,7 +147,7 @@ XF86MonBrightness{Up,Down}
 
 ## Screenshot
 Print
-    gnome-screenshot -i
+    flameshot gui -p $HOME
 
 # Notification
 super + q

@@ -1,0 +1,23 @@
+#!/usr/bin/bash
+# Microfone notification - matfurla
+
+#  ██▒   █▓ ▒█████   ██▓    
+# ▓██░   █▒▒██▒  ██▒▓██▒    
+#  ▓██  █▒░▒██░  ██▒▒██░    
+#   ▒██ █░░▒██   ██░▒██░    
+#    ▒▀█░  ░ ████▓▒░░██████▒
+#    ░ ▐░  ░ ▒░▒░▒░ ░ ▒░▓  ░
+#    ░ ░░    ░ ▒ ▒░ ░ ░ ▒  ░
+#      ░░  ░ ░ ░ ▒    ░ ░   
+#       ░      ░ ░      ░  ░
+#      ░                    
+
+state=$(amixer get Capture | sed -n 's/^.*\[\(o[nf]\+\)]$/\1/p' | uniq)
+
+if [ "$state" = off ]; then
+    icon=""
+    notify-send.sh -r 7 "$(echo "$icon muted")"
+else
+   icon=""
+   notify-send.sh -r 7 "$(echo "$icon unmuted")"
+fi

@@ -9,7 +9,6 @@
 !  ░    ░     ░        ░  ░      ░      ░ ░     ░        ░     ░ ░         ░  ░      ░  
 !                                                              ░                        
 
-
 !! GENERAL
 urxvt*cursorBlink:      false
 urxvt*scrollBar:        false
@@ -22,20 +21,21 @@ URxvt.matcher.button:   1
 
 
 !! FONTS
-URxvt.font:             xft:UbuntuMono Nerd Font:pixelsize=16:style=bold:antialias=true
-URxvt.boldFont:         xft:UbuntuMono Nerd Font:pixelsize=16:style=bold:antialias=true
-URxvt.italicFont:       xft:UbuntuMono Nerd Font:pixelsize=16:style=italic:antialias=true
-URxvt.boldItalicFont:   xft:UbuntuMono Nerd Font:pixelsize=16:style=bold italic:antialias=true
+URxvt.font:             xft:UbuntuMono Nerd Font:pixelsize=18:style=regular:antialias=true
+URxvt.boldFont:         xft:UbuntuMono Nerd Font:pixelsize=18:style=bold:antialias=true
+URxvt.italicFont:       xft:UbuntuMono Nerd Font:pixelsize=18:style=italic:antialias=true
+URxvt.boldItalicFont:   xft:UbuntuMono Nerd Font:pixelsize=18:style=bold italic:antialias=true
 
 Xft.antialias:          true
 Xft.hinting:            true
 Xft.hintstyle:          hintslight
 Xft.lcdfilter:          lcddefault
+Xft.dpi:                96
 Xft.rgba:               rgb
 
 
 !! COLORS
-*background:            [90]#000000
+*background:            #000000
 *foreground:            #ffffcc
 *.cursorColor:          #ffffcc
 

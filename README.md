@@ -10,7 +10,7 @@
      ░        ░ ░                   ░      ░  ░   ░  ░      ░  
    ░                                                           
 
-  Distro ..................... Debian Sid
+  Distro ..................... Void Linux
   Window Manager ............. bspwm
   Terminal ................... urxvt
   Fonts ...................... Iosevka

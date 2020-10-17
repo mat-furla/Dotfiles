@@ -16,14 +16,17 @@ if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
   echo "D-Bus per-session daemon address is: $DBUS_SESSION_BUS_ADDRESS"
 fi
 
+## XRESOURCES
+xrdb -merge $HOME/.Xresources
+
 ## BACKGROUND
-hsetroot -cover "$HOME/Desktop/black_city.jpeg"
+hsetroot -cover "$HOME/Desktop/game.png"
 
 ## CURSOR
 xsetroot -cursor_name left_ptr
 
-## NOTIFICATIONS
-dunst &
+## BACKLIGHT
+light -S 2
 
 ## COMPOSITOR
 picom --experimental-backends -b --config $HOME/.config/picom/picom.conf &

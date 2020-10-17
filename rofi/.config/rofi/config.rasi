@@ -1,6 +1,6 @@
 configuration {
   show-icons:         true;
-  icon-theme:         "La Capitaine";
+  icon-theme:         "McMojave-circle-blue";
   cycle:              true;
   hide-scrollbar:     true;
   disable-history:    false;
