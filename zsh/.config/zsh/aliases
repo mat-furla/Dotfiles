@@ -89,8 +89,8 @@ alias gc='git commit -m'
 alias gp='git push --set-upstream origin master'
 
 alias code='code-oss'
-alias net='sudo connman-ncurses'
 
+alias dtf='cd $HOME/.dotfiles'
 alias dt='cd $HOME/Desktop'
 alias dl='cd $HOME/Downloads'
 alias dev='cd $HOME/Dev'
