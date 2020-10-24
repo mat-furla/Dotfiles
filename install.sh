@@ -59,13 +59,11 @@ PACOTES_PARA_INSTALAR=(
    xorg
    bspwm
    sxhkd
-   rxvt-unicode
-   bash-completion
    rofi
    jq
-   geany
    hsetroot
-   pcmanfm
+   thunar
+   viewnior
    xarchiver
    rar
    zip
@@ -74,9 +72,9 @@ PACOTES_PARA_INSTALAR=(
    ncompress
    p7zip-rar
    mpv
+   obs-studio
    chromium
    chromium-l10n
-   sxiv
    zathura
    picom
    flameshot

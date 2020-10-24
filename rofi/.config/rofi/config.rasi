@@ -6,5 +6,5 @@ configuration {
   disable-history:    false;
   modi:               "drun";
   display-drun:       "apps";
-  columns: 1;
+  columns: 2;
 }
