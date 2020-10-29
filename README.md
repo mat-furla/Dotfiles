@@ -10,12 +10,12 @@
      ░        ░ ░                   ░      ░  ░   ░  ░      ░  
    ░                                                           
 
-  Distro ..................... Void Linux
+  Distro ..................... Debian
   Window Manager ............. bspwm
-  Terminal ................... urxvt
-  Fonts ...................... Iosevka
+  Terminal ................... alacritty
+  Fonts ...................... Iosevka, Ubuntu Nerd Font Mono, Breeze Sans
   Browser .................... Chromium
-  File Browser ............... PCManFM
+  File Browser ............... Thunar
   Editor ..................... Visual Studio Code
   Music Player ............... Spotify
   Media Player ............... mpv

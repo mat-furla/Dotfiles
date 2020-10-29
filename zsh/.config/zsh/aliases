@@ -88,11 +88,12 @@ alias gl='git pull'
 alias gc='git commit -m'
 alias gp='git push --set-upstream origin master'
 
-alias code='code-oss'
+alias yarn='yarnpkg'
 
 alias dtf='cd $HOME/.dotfiles'
 alias dt='cd $HOME/Desktop'
 alias dl='cd $HOME/Downloads'
+alias doc='cd $HOME/Documentos'
 alias dev='cd $HOME/Dev'
 
 alias db='docker-compose --build'

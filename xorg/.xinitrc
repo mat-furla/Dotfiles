@@ -17,16 +17,13 @@ if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
 fi
 
 ## XRESOURCES
-## xrdb -merge $HOME/.Xresources
+xrdb -merge $HOME/.Xresources
 
 ## BACKGROUND
 hsetroot -cover "$HOME/Desktop/dracula.jpg"
 
 ## CURSOR
 xsetroot -cursor_name left_ptr
-
-## BACKLIGHT
-light -S 2
 
 ## COMPOSITOR
 picom --experimental-backends -b --config $HOME/.config/picom/picom.conf &

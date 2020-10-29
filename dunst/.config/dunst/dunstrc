@@ -29,7 +29,7 @@
 
 
     # Text
-    font = Iosevka, Font Awesome 5 Free 10
+    font = Iosevka, FontAwesome 10
     line_height = 0
     markup = full
     format = "<b>%s</b>\n%b"
