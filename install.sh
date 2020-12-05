@@ -107,6 +107,15 @@ PACOTES_PARA_INSTALAR=(
 )
 InstalarPacote
 
+# Pacotes para Estudo
+MSG="Instalando pacotes para estudo"
+PrintMsg
+PACOTES_PARA_INSTALAR=(
+   octave
+   scilab
+)
+InstalarPacote
+
 # Pacotes para Desenvolvimento
 MSG="Instalando pacotes para desenvolvimento"
 PrintMsg
