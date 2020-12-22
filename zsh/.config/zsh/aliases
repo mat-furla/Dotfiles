@@ -89,6 +89,8 @@ alias dl='cd $HOME/Downloads'
 alias doc='cd $HOME/Documentos'
 alias dev='cd $HOME/Dev'
 
+alias n='nnn'
+
 alias db='docker-compose --build'
 alias du='docker-compose up -d'
 alias dsc='docker stop $(docker ps -a -q)'

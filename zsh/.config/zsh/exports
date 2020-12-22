@@ -9,6 +9,9 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export PATH="$PATH:$HOME/.local/bin"
 
+export NNN_BMS='d:/home/matheus/Downloads;D:/home/matheus/Dev;'
+export NNN_PLUG='m:nmount;o:nuke'
+
 export QT_QPA_PLATFORMTHEME=gtk3
 
 export LESS_TERMCAP_mb=$'\E[01;32m'
