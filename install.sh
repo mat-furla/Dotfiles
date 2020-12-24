@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
-#  ██▓ ███▄    █   ██████ ▄▄▄█████▓ ▄▄▄       ██▓     ██▓    
-# ▓██▒ ██ ▀█   █ ▒██    ▒ ▓  ██▒ ▓▒▒████▄    ▓██▒    ▓██▒    
-# ▒██▒▓██  ▀█ ██▒░ ▓██▄   ▒ ▓██░ ▒░▒██  ▀█▄  ▒██░    ▒██░    
-# ░██░▓██▒  ▐▌██▒  ▒   ██▒░ ▓██▓ ░ ░██▄▄▄▄██ ▒██░    ▒██░    
+#  ██▓ ███▄    █   ██████ ▄▄▄█████▓ ▄▄▄       ██▓     ██▓
+# ▓██▒ ██ ▀█   █ ▒██    ▒ ▓  ██▒ ▓▒▒████▄    ▓██▒    ▓██▒
+# ▒██▒▓██  ▀█ ██▒░ ▓██▄   ▒ ▓██░ ▒░▒██  ▀█▄  ▒██░    ▒██░
+# ░██░▓██▒  ▐▌██▒  ▒   ██▒░ ▓██▓ ░ ░██▄▄▄▄██ ▒██░    ▒██░
 # ░██░▒██░   ▓██░▒██████▒▒  ▒██▒ ░  ▓█   ▓██▒░██████▒░██████▒
 # ░▓  ░ ▒░   ▒ ▒ ▒ ▒▓▒ ▒ ░  ▒ ░░    ▒▒   ▓▒█░░ ▒░▓  ░░ ▒░▓  ░
 #  ▒ ░░ ░░   ░ ▒░░ ░▒  ░ ░    ░      ▒   ▒▒ ░░ ░ ▒  ░░ ░ ▒  ░
-#  ▒ ░   ░   ░ ░ ░  ░  ░    ░        ░   ▒     ░ ░     ░ ░   
+#  ▒ ░   ░   ░ ░ ░  ░  ░    ░        ░   ▒     ░ ░     ░ ░
 #  ░           ░       ░                 ░  ░    ░  ░    ░  ░
-                                                           
+
 
 # ----------------------------- VARIÁVEIS ------------------------------ #
 MSG=""
@@ -54,13 +54,11 @@ RemoverPacote()
 
 
 # ----------------------------- EXECUÇÃO ------------------------------- #
-#sudo rm /var/lib/dpkg/lock-frontend
-#sudo rm /var/cache/apt/archives/lock
-
 ## Atualizando os repositórios ##
 MSG="Atualizando repositórios"
 PrintMsg
 sudo apt update -y
+
 
 # Pacotes Gerais
 MSG="Instalando pacotes gerais"
@@ -68,17 +66,14 @@ PrintMsg
 PACOTES_PARA_INSTALAR=(
    firmware-linux-nonfree
    firmware-iwlwifi
-   network-manager
-   xstow
+   stow
    xorg
    bspwm
    sxhkd
    rofi
-   zsh
-   zplug
+   fish
    jq
    hsetroot
-   thunar
    viewnior
    xarchiver
    rar
@@ -107,37 +102,24 @@ PACOTES_PARA_INSTALAR=(
 )
 InstalarPacote
 
-# Pacotes para Estudo
-MSG="Instalando pacotes para estudo"
-PrintMsg
-PACOTES_PARA_INSTALAR=(
-   octave
-   scilab
-)
-InstalarPacote
 
 # Pacotes para Desenvolvimento
 MSG="Instalando pacotes para desenvolvimento"
 PrintMsg
 PACOTES_PARA_INSTALAR=(
-   docker
-   docker-compose
    git
    nodejs
    npm
-   telegram-desktop
 )
 InstalarPacote
 
-# Habilitar serviços
-#sudo systemctl enable NetworkManager.service
-#sudo systemctl enable tlp.service
 
 # Removendo pacotes
 MSG="Removendo pacotes"
 PrintMsg
 PACOTES_PARA_REMOVER=(
    lemonbar
+   vlc
    system-config-printer
    xserver-xorg-video-all
    xserver-xorg-video-intel
@@ -148,12 +130,6 @@ PACOTES_PARA_REMOVER=(
    xserver-xorg-video-vmware
 )
 RemoverPacote
-
-# Criando links dos dotfiles
-MSG="Criando links dos dotfiles"
-PrintMsg
-xstow -t $HOME bash bspwm chromium dunst mpv picom rofi sxhkd xorg
-# ---------------------------------------------------------------------- #
 
 
 # --------------------------- PÓS-INSTALAÇÃO --------------------------- #

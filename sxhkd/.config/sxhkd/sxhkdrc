@@ -101,11 +101,11 @@ super + {h,j,k,l}
 #### CUSTOM
 ## Terminal
 super + Return
-    alacritty
+    st
 
 ## Launcher
 super + space
-    appsmenu
+    rofi -show drun
 
 ## Bookmarks
 super + shift + space
