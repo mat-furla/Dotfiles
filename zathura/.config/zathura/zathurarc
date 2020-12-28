@@ -10,7 +10,7 @@
 #   ░ ░          ░  ░         ░  ░  ░   ░        ░           ░  ░   ░     ░ ░      
 # ░                                                                       ░        
 
-set font			                  "BreezeSans Regular 11"
+set font			                  "Iosevka Regular 12"
 set recolor                     false
 
 set completion-bg               "#282a36" # Background
@@ -43,12 +43,12 @@ set highlight-active-color      "#ff79c6" # Pink
 set default-bg                  "#282a36" # Background
 set default-fg                  "#f8f8f2" # Foreground
 
-set statusbar-v-padding  	    15
-set statusbar-h-padding  	    75
-set pages-per-row 		        1
+set statusbar-v-padding         15
+set statusbar-h-padding  	      75
+set pages-per-row 		          1
 set statusbar-basename          true
-set page-padding 		        1
-set adjust_window		        width
+set page-padding                1
+set adjust_window		            width
 map r reload
 map R rotate
 map K zoom in

@@ -64,7 +64,7 @@ sudo apt update -y
 MSG="Instalando pacotes gerais"
 PrintMsg
 PACOTES_PARA_INSTALAR=(
-   firmware-linux-nonfree
+   intel-microcode
    firmware-iwlwifi
    stow
    xorg
@@ -72,6 +72,7 @@ PACOTES_PARA_INSTALAR=(
    sxhkd
    rofi
    fish
+   mousepad
    jq
    hsetroot
    viewnior
@@ -80,7 +81,6 @@ PACOTES_PARA_INSTALAR=(
    zip
    unar
    plzip
-   ncompress
    p7zip-rar
    mpv
    obs-studio
@@ -93,12 +93,27 @@ PACOTES_PARA_INSTALAR=(
    light
    dbus-x11
    dunst
-   libglib2.0-bin
    alsa-utils
    binutils
    fonts-font-awesome
    i965-va-driver-shaders
    intel-media-va-driver-non-free
+)
+InstalarPacote
+
+
+# Dependencias
+MSG="Instalando depencências de compilação"
+PrintMsg
+PACOTES_PARA_INSTALAR=(
+   libglib2.0-bin
+   curl
+   libreadline-dev
+   libharfbuzz-dev
+   make
+   gcc
+   libx11-dev
+   libxft-dev
 )
 InstalarPacote
 

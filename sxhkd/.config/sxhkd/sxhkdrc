@@ -105,11 +105,11 @@ super + Return
 
 ## Launcher
 super + space
-    rofi -show drun
+    launcher
 
 ## Bookmarks
 super + shift + space
-    bookmarksmenu
+    bookmark-launcher
 
 ## Vol Up
 XF86AudioRaiseVolume

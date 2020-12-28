@@ -17,12 +17,6 @@ Xft.lcdfilter:          lcddefault
 Xft.dpi:                96
 Xft.rgba:               rgb
 
-*.font:                 UbuntuMono Nerd Font:pixelsize=20:style=regular:antialias=true
-*.boldFont:             UbuntuMono Nerd Font:pixelsize=20:style=bold:antialias=true
-*.italicFont:           UbuntuMono Nerd Font:pixelsize=20:style=italic:antialias=true
-*.boldItalicFont:       UbuntuMono Nerd Font:pixelsize=20:style=bold italic:antialias=true
-*.letterSpace:          -1
-
 
 !! COLORS
 *.foreground:           #F8F8F2

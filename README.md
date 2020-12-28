@@ -10,25 +10,26 @@
      ░        ░ ░                   ░      ░  ░   ░  ░      ░  
    ░                                                           
 
-  Distro ..................... Debian
+  Distro ..................... Debian Sid
   Window Manager ............. bspwm
-  Terminal ................... alacritty
-  Fonts ...................... Iosevka, Ubuntu Nerd Font Mono, Breeze Sans
+  Terminal ................... st
+  Fonts ...................... Iosevka Nerd Font
   Browser .................... Chromium
-  File Browser ............... Thunar
+  File Browser ............... nnn
   Editor ..................... Visual Studio Code
-  Music Player ............... Spotify
   Media Player ............... mpv
   Launcher ................... rofi
-  GTK Theme .................. Flat Remix
-  Icon Theme ................. La Capitaine
+  GTK Theme .................. Dracula
+  Icon Theme ................. Papirus-Dark
 
 ```
+
  Manage with xstow
  =============
 
 This repository is meant to be used with stow/xstow. An `install.sh` is included to add all
 the needed packages for my system, modify as wanted.
+
 
  Improve fonts
  =============
@@ -42,6 +43,26 @@ the needed packages for my system, modify as wanted.
 
 3) Modify (or create) `/etc/profile.d/freetype2.sh`
 
+
+ Chromium
+ ====================================
+
+## Enable hardware acceleration
+
+ 1) Edit `/etc/chromium.d/default-flags` to contain the following:
+  ```
+  export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --enable-gpu-rasterization"
+  export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --enable-zero-copy"
+  export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --ignore-gpu-blocklist"
+  export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --disable-gpu-driver-bug-workarounds"
+  export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --force-dark-mode"
+  export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --use-gl=desktop"
+  ```
+
+## Enable widevine
+
+  1) Execute `~/.local/bin/widevine.sh` script;
+  2) Access [https://bitmovin.com/demos/drm](https://bitmovin.com/demos/drm) and test widevine
 
  Thinkpad x250 specific configuration
  ====================================

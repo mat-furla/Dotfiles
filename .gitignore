@@ -1,2 +1,2 @@
-zsh/.config/zsh/powerlevel10k
-zsh/.config/zsh/history
+fish/.config/fish/*
+!fish/.config/fish/fish_plugins
