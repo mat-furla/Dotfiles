@@ -13,10 +13,11 @@
 !! GENERAL
 urxvt*cursorBlink:      false
 urxvt*scrollBar:        false
-urxvt*depth:            32
+urxvt*depth:            15
 urxvt*internalBorder:   50
 urxvt*dynamicColors:    on
 urxvt*perl-ext-common:  default,matcher,selection-to-clipboard
+URxvt.geometry:         70x15
 URxvt.url-launcher:     /usr/bin/xdg-open
 URxvt.matcher.button:   1
 
