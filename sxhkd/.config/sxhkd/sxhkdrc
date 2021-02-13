@@ -101,7 +101,7 @@ super + {h,j,k,l}
 #### CUSTOM
 ## Terminal
 super + Return
-    st
+    urxvtc
 
 ## Launcher
 super + space

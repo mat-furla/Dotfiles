@@ -70,10 +70,14 @@ PACOTES_PARA_INSTALAR=(
    xorg
    bspwm
    sxhkd
-   rofi
    fish
+   rxvt-unicode
+   rofi
    mousepad
+   nnn
    jq
+   file
+   trash-cli
    hsetroot
    viewnior
    xarchiver
@@ -83,9 +87,6 @@ PACOTES_PARA_INSTALAR=(
    plzip
    p7zip-rar
    mpv
-   obs-studio
-   chromium
-   chromium-l10n
    zathura
    picom
    flameshot
@@ -94,26 +95,11 @@ PACOTES_PARA_INSTALAR=(
    dbus-x11
    dunst
    alsa-utils
+   pulseaudio
    binutils
    fonts-font-awesome
    i965-va-driver-shaders
    intel-media-va-driver-non-free
-)
-InstalarPacote
-
-
-# Dependencias
-MSG="Instalando depencências de compilação"
-PrintMsg
-PACOTES_PARA_INSTALAR=(
-   libglib2.0-bin
-   curl
-   libreadline-dev
-   libharfbuzz-dev
-   make
-   gcc
-   libx11-dev
-   libxft-dev
 )
 InstalarPacote
 

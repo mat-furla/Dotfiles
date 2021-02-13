@@ -12,9 +12,9 @@
 
   Distro ..................... Debian Sid
   Window Manager ............. bspwm
-  Terminal ................... st
+  Terminal ................... urxvt
   Fonts ...................... Iosevka Nerd Font
-  Browser .................... Chromium
+  Browser .................... Brave Browser
   File Browser ............... nnn
   Editor ..................... Visual Studio Code
   Media Player ............... mpv

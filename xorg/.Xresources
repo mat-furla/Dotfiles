@@ -9,7 +9,24 @@
 !  ░    ░     ░        ░  ░      ░      ░ ░     ░        ░     ░ ░         ░  ░      ░  
 !                                                              ░                        
 
+
+!! GENERAL
+urxvt*cursorBlink:      false
+urxvt*scrollBar:        false
+urxvt*depth:            32
+urxvt*internalBorder:   50
+urxvt*dynamicColors:    on
+urxvt*perl-ext-common:  default,matcher,selection-to-clipboard
+URxvt.url-launcher:     /usr/bin/xdg-open
+URxvt.matcher.button:   1
+
+
 !! FONTS
+URxvt.font:             xft:Iosevka Term:pixelsize=16:style=regular:antialias=true
+URxvt.boldFont:         xft:Iosevka Term:pixelsize=16:style=bold:antialias=true
+URxvt.italicFont:       xft:Iosevka Term:pixelsize=16:style=italic:antialias=true
+URxvt.boldItalicFont:   xft:Iosevka Term:pixelsize=16:style=bold italic:antialias=true
+
 Xft.antialias:          true
 Xft.hinting:            true
 Xft.hintstyle:          hintslight

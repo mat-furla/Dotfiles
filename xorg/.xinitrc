@@ -25,8 +25,11 @@ hsetroot -cover "$HOME/Desktop/dracula.jpg"
 ## CURSOR
 xsetroot -cursor_name left_ptr
 
+## URXVT
+urxvtd -q -f -o
+
 ## COMPOSITOR
-picom --experimental-backends -b --config $HOME/.config/picom/picom.conf &
+picom --config $HOME/.config/picom/picom.conf &
 
 ## WM
 sxhkd &
