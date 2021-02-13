@@ -12,7 +12,7 @@ alias p='sudo shutdown -h now'
 
 alias q='apt search'
 alias i='sudo apt install'
-alias u='sudo apt update'
+alias u='sudo apt update && sudo apt upgrade'
 alias r='sudo apt purge'
 alias c='sudo apt autoremove'
 
