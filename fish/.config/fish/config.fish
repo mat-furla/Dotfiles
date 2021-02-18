@@ -1,7 +1,6 @@
 ## ALIASES
 alias sd='sudo'
-alias ls='nnn -d'
-alias n='nnn -d'
+alias ls='n'
 alias N='sudo -E nnn -d'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -33,13 +32,17 @@ set PATH $HOME/.yarn/bin $PATH
 
 set -gx NNN_BMS 'h:/home/matheus;d:/home/matheus/Downloads/;D:/home/matheus/Dev'
 set -gx NNN_OPENER $HOME/.config/nnn/plugins/nuke
-set -gx NNN_PLUG 'm:-_|mousepad $nnn;c:-_|code $nnn;x:-_|xarchiver $nnn'
+set -gx NNN_FCOLORS '02030b020005060f0d0b0d09'
+set -gx NNN_PLUG 'm:-_|mousepad $nnn;c:-_|code $nnn;f:fzopen'
 set -gx NNN_TRASH 1
 
 set -gx QT_QPA_PLATFORMTHEME gtk3
 set -gx _JAVA_AWT_WM_NONREPARENTING 1
 
 set -gx BROWSER brave-browser
-set -gx TERM rxvt-unicode-256color
 set -gx VISUAL mousepad
 set -gx EDITOR nano
+
+
+## PROMPT
+starship init fish | source

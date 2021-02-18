@@ -77,12 +77,12 @@ PACOTES_PARA_INSTALAR=(
    nnn
    jq
    file
+   fzf
    trash-cli
    hsetroot
    viewnior
    gtk2-engines-murrine
    gnome-themes-standard
-   xarchiver
    rar
    zip
    unar
