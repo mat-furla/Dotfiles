@@ -1,7 +1,10 @@
 ## ALIASES
 alias sd='sudo'
 alias ls='n'
-alias N='sudo -E nnn -d'
+alias N='sudo -E nnn'
+alias dl='cd $HOME/Downloads'
+alias doc='cd $HOME/Documents'
+alias dev='cd $HOME/Dev'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
@@ -30,7 +33,7 @@ set fish_greeting
 set PATH $HOME/.local/bin $PATH
 set PATH $HOME/.yarn/bin $PATH
 
-set -gx NNN_BMS 'h:/home/matheus;d:/home/matheus/Downloads/;D:/home/matheus/Dev'
+set -gx NNN_BMS 'd:/home/matheus/Downloads/;D:/home/matheus/Dev'
 set -gx NNN_OPENER $HOME/.config/nnn/plugins/nuke
 set -gx NNN_FCOLORS '02030b020005060f0d0b0d09'
 set -gx NNN_PLUG 'm:-_|mousepad $nnn;c:-_|code $nnn;f:fzopen'

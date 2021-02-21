@@ -12,8 +12,8 @@
 
   Distro ..................... Debian Sid
   Window Manager ............. bspwm
-  Terminal ................... urxvt
-  Fonts ...................... Iosevka Nerd Font
+  Terminal ................... alacritty
+  Fonts ...................... Iosevka
   Browser .................... Brave Browser
   File Browser ............... nnn
   Editor ..................... Visual Studio Code

@@ -66,12 +66,11 @@ PrintMsg
 PACOTES_PARA_INSTALAR=(
    intel-microcode
    firmware-iwlwifi
-   stow
+   xstow
    xorg
    bspwm
    sxhkd
    fish
-   rxvt-unicode
    rofi
    mousepad
    nnn
@@ -83,6 +82,7 @@ PACOTES_PARA_INSTALAR=(
    viewnior
    gtk2-engines-murrine
    gnome-themes-standard
+   atool
    rar
    zip
    unar
@@ -99,6 +99,7 @@ PACOTES_PARA_INSTALAR=(
    alsa-utils
    pulseaudio
    binutils
+   fonts-noto-color-emoji
    fonts-font-awesome
    i965-va-driver-shaders
    intel-media-va-driver-non-free
