@@ -17,7 +17,7 @@ if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
 fi
 
 ## BACKGROUND
-hsetroot -cover "$HOME/Desktop/dracula.jpg"
+hsetroot -solid "#212121"
 
 ## CURSOR
 xsetroot -cursor_name left_ptr

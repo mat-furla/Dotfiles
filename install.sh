@@ -98,7 +98,7 @@ PACOTES_PARA_INSTALAR=(
    dunst
    alsa-utils
    pulseaudio
-   binutils
+   materia-gtk-theme
    fonts-noto-color-emoji
    fonts-font-awesome
    i965-va-driver-shaders

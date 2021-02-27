@@ -14,11 +14,11 @@
 ## WINDOW
 window:
   dimensions:
-    columns: 70
+    columns: 75
     lines: 20
   padding:
-    x: 35
-    y: 35
+    x: 30
+    y: 30
   dynamic_padding: true
   decorations: full
   startup_mode: Windowed
@@ -64,48 +64,45 @@ font:
 ## COLORS
 colors:
   primary:
-    background: '0x282a36'
-    foreground: '0xf8f8f2'
+    background: '0x1a1a1a'
+    foreground: '0xeeffff'
 
   cursor:
-    text: '0x44475a'
-    cursor: '0xf8f8f2'
+    text: '0x212121'
+    cursor: '0xeeffff'
 
-  selection:
-    text: '0xf8f8f2'
-    background: '0x44475a'
-
+  # Normal colors
   normal:
-    black:   '0x000000'
-    red:     '0xff5555'
-    green:   '0x50fa7b'
-    yellow:  '0xf1fa8c'
-    blue:    '0xbd93f9'
-    magenta: '0xff79c6'
-    cyan:    '0x8be9fd'
-    white:   '0xbfbfbf'
+    black:   '0x212121'
+    red:     '0xf07178'
+    green:   '0xc3e88d'
+    yellow:  '0xffcb6b'
+    blue:    '0x82aaff'
+    magenta: '0xc792ea'
+    cyan:    '0x89ddff'
+    white:   '0xeeffff'
 
+  # Bright colors
   bright:
-    black:   '0x4d4d4d'
-    red:     '0xff6e67'
-    green:   '0x5af78e'
-    yellow:  '0xf4f99d'
-    blue:    '0xcaa9fa'
-    magenta: '0xff92d0'
-    cyan:    '0x9aedfe'
-    white:   '0xe6e6e6'
+    black:   '0x4a4a4a'
+    red:     '0xf07178'
+    green:   '0xc3e88d'
+    yellow:  '0xffcb6b'
+    blue:    '0x82aaff'
+    magenta: '0xc792ea'
+    cyan:    '0x89ddff'
+    white:   '0xffffff'
 
-  dim:
-    black:   '0x14151b'
-    red:     '0xff2222'
-    green:   '0x1ef956'
-    yellow:  '0xebf85b'
-    blue:    '0x4d5b86'
-    magenta: '0xff46b0'
-    cyan:    '0x59dffc'
-    white:   '0xe6e6d1'
+  indexed_colors:
+    - { index: 16, color: '0xf78c6c' }
+    - { index: 17, color: '0xff5370' }
+    - { index: 18, color: '0x303030' }
+    - { index: 19, color: '0x353535' }
+    - { index: 20, color: '0xb2ccd6' }
+    - { index: 21, color: '0xeeffff' }
 
-  indexed_colors: []
+custom_cursor_colors: true
+draw_bold_text_with_bright_colors: false
 
 
 ## OPACITY
@@ -115,6 +112,7 @@ background_opacity: 1
 ## CLIPBOARD
 selection:
   save_to_clipboard: true
+
 
 ## CURSOR
 cursor:

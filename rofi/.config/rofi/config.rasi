@@ -10,7 +10,7 @@ configuration {
   sidebar-mode:                   false;
 }
 
-@import "dracula.rasi"
+@import "material-darker.rasi"
 
 window {
   transparency:                   "real";

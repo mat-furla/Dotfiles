@@ -19,7 +19,7 @@
   Editor ..................... Visual Studio Code
   Media Player ............... mpv
   Launcher ................... rofi
-  GTK Theme .................. Dracula
+  GTK Theme .................. Materia GTK Theme
   Icon Theme ................. Papirus-Dark
 
 ```

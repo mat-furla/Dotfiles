@@ -1,0 +1,9 @@
+/* Material Darker */
+
+* {
+    al:  #1A1A1A;
+    bg:  #1A1A1A;
+    se:  #212121; 
+    fg:  #EFFFFF;
+    ac:  #F07178;
+}
