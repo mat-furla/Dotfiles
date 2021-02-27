@@ -59,10 +59,6 @@ the needed packages for my system, modify as wanted.
   export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --use-gl=desktop"
   ```
 
-## Enable widevine
-
-  1) Execute `~/.local/bin/widevine.sh` script;
-  2) Access [https://bitmovin.com/demos/drm](https://bitmovin.com/demos/drm) and test widevine
 
  Thinkpad x250 specific configuration
  ====================================
